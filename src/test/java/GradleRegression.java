@@ -1,3 +1,4 @@
+import io.qameta.allure.Step;
 import org.apache.commons.io.FileUtils;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.*;
@@ -14,6 +15,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElementLocated;
 
 public class GradleRegression extends BaseTest{
+    @Step
     @Test
     public void test1() throws IOException {
         System.setProperty(PropertiesManager.getChromeDriver(),PropertiesManager.getChromeDriverPath());
